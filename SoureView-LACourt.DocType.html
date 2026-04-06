@@ -1,0 +1,2620 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head id="_ctl0__ctl0_head1">
+    <title>
+        LASC - Case Summary
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="icon" type="image/png" href="/casesummary/v2web3/commonv4/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/casesummary/v2web3/commonv4/images/favicon-32x32.png" sizes="32x32" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/sitemaster.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/fonts.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/common.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/home.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/wrapper.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/breadcrumb.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/screen.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/pending.css" media="all" />
+
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/styles3.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/template.css" media="all" />
+    <link href="/casesummary/v2web3/commonv4/styles/jquery-ui.css" rel="stylesheet" />
+    <link href="/casesummary/v2web3/commonv4/styles/jquery-ui-smoothness.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/tooltip.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="/casesummary/v2web3/commonv4/styles/global508.css" media="all" />
+    <link rel="stylesheet" href="/casesummary/v2web3/css/site.css?v=Uc055eAy8zHMlqRsyZpzjssp257WPcP6b3uAkQre3v4" />
+    <link rel="stylesheet" href="/casesummary/v2web3/css/AOC.css" />
+</head>
+
+
+<body style="background-color: #ffffff;">
+    <!--JQuery-->
+    <script src="/casesummary/v2web3/commonv4/scripts/jquery-1.11.1.min.js" type="text/javascript"></script>
+
+    <div id="mainContainer">
+        <h1><span style="display:none" role="heading">Main Content</span></h1>
+        <div style="background-color: white;">
+            <div class="pageWrap"></div>
+            <div class="mainContentWrap" id="divMainContent">
+                <div class="basicWrap">
+                    <!--<div class="contentCategory" style="padding-top: 28px; padding-bottom: 10px;">
+                        <a href="../page/ON0001">Online Services</a>
+                    </div>
+                    -->
+                    <div id="top"></div>
+                    <div class="contentTitleWrapper"  style="display:none">
+                        <div class="contentTitle" >
+                            <!-- Case Access Title -->
+                            <div class="contentTitle">
+                                
+        <span>Civil Case Access </span>
+
+                            </div>
+                         
+                        </div>
+                    </div>
+                        <div style="text-align: right; padding-bottom: 20px;">
+                        <!-- Language Dropdown (Using Partial View) -->
+                        
+
+<div class="multiLngPosition">
+    <div class="divLangImg">
+        <img src="/casesummary/v2web3/img/translate.gif" class="langImg" alt="Language Icon" style="height: 48px;width: 68px;">
+    </div>
+    <div class="divLangWrapper">
+        <div class="divLangText">
+            <b>Language Access</b>
+        </div>
+        <div class="divLangDdl">
+            <select id="languageDropdown" onchange="changeLanguage(this.value)">
+                        <option value="en-us" selected>English</option>
+                        <option value="es">Espa&#xF1;ol</option>
+                        <option value="vi">Ti&#x1EBF;ng Vi&#x1EC7;t</option>
+                        <option value="ko">&#xD55C;&#xAD6D;&#xC5B4;</option>
+                        <option value="zh">&#x4E2D;&#x6587;</option>
+                        <option value="hy">&#x570;&#x561;&#x575;&#x565;&#x580;&#x565;&#x576;</option>
+            </select>
+        </div>
+    </div>
+</div>
+<style>
+
+    .contentTitleWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .contentTitle {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .multiLngPosition {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap; 
+    }
+    .multiLngPosition {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        white-space: nowrap;
+    }
+
+    .divLangWrapper {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+
+</style>
+
+<script>
+    const challengeUrl = "https://www.lacourt.ca.gov/casesummary/v2web3/ChangeLanguage";
+
+    document.getElementById("languageDropdown").addEventListener("change", function () {
+        const language = this.value;
+        fetch(challengeUrl + "/" + language, {
+            method: 'GET'
+        }).then(() => {
+            window.location.reload();
+        });
+        /*        fetch(challengeUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ language: language })
+        }).then(() => {
+            alert("reloading");
+            window.location.reload();
+
+        });
+        */
+    });
+</script>
+                        </div>
+
+                    <!--stuff-->
+                    
+
+
+    <a name="CaseInformation"></a>
+    <hr class="headerDivider" />
+<div class="quickNavigation"><span class="currentNavSection">Case Information</span> | <a href="#RegisterOfAction">Register Of Actions</a> | <a href="#FutureHearings">FUTURE HEARINGS</a> | <a href="#Parties">PARTY INFORMATION</a> | <a href="#DocumentsFiled">Documents Filed</a> | <a href="#PastProceedings">Past Proceedings</a></div>    <span></span>
+    <table class="dataTable">
+        <tr>
+            <td class="KeyField">  CASE INFORMATION: </td>
+            <td>20STCV36044</td>
+        </tr>
+        <tr>
+            <td class="KeyField"> Case Title: </td>
+            <td>LAURA ALCARAZ, ET AL. VS LOS ANGELES COUNTY METROPOLITAN TRANSPORTATION AUTHORITY, A PUBLIC ENTITY</td>
+        </tr>
+        <tr>
+            <td class="KeyField">Filing Courthouse:  </td>
+            <td>Spring Street Courthouse</td>
+        </tr>
+        <tr>
+            <td class="KeyField">Filing Date: </td>
+            <td>9/21/2020</td>
+        </tr>
+        <tr>
+            <td class="KeyField">Case Type: </td>
+            <td>Motor Vehicle - Personal Injury/Property Damage/Wrongful Death (General Jurisdiction)</td>
+        </tr>
+        <tr>
+            <td class="KeyField">Status: </td>
+          <td>Request for Dismissal - Before Trial not following ADR or more than 60 days since ADR on 12/4/2024</td>
+        </tr>
+    </table>
+        <p>
+            <a onclick="return displayNewWindow(this);" href="https://www.lacourt.ca.gov/paos/v2web3/DocumentImages/SearchCaseNumber?casenumber=20STCV36044">Click here to access document images for this case.</a>
+        <br />
+            If this link fails, you may go to the Case Document Images site and search using the case number&#xD;&#xA;displayed on this page
+    </p>
+        <form id="caseSummaryForm" method="post">
+
+            <table width="100%">
+                <tr>
+                    <td align="right"><input type="button" class="btn btn-primary btn-small" value="🖶 Print" onclick="window.print();" /> <input type="submit" class="btn btn-success" value="New Search" /></td>
+                </tr>
+            </table>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8K4n0x1HrfFAlJmJKhryg1HIpXf7VvcuigV5LDnjSyi6O9MgpbFpNE9vWU4CFAJFSLldDaagG1apfSqSrY0nr9B23pzwVBXXSjWEgMhFIdMRAjr2r5d5xDIAsGfactFZ64UUNMczrEujS9CVhkcHGbY" /></form>
+    <div class="bottomSpacer"></div>
+    <a name="FutureHearings"></a>
+    <div class="caseInfoHeader">Future Hearings</div>
+    <hr class="headerDivider" />
+<div class="quickNavigation"><a href="#CaseInformation">Case Information</a> | <a href="#RegisterOfAction">Register Of Actions</a> | <span class="currentNavSection">FUTURE HEARINGS</span> | <a href="#Parties">PARTY INFORMATION</a> | <a href="#DocumentsFiled">Documents Filed</a> | <a href="#PastProceedings">Past Proceedings</a></div>        <table class="dataTable">
+    </table>
+    <div class="bottomSpacer"></div>
+    <a name="Parties"></a>
+    <div class="caseInfoHeader">PARTY INFORMATION </div>
+    <hr class="headerDivider" />
+<div class="quickNavigation"><a href="#CaseInformation">Case Information</a> | <a href="#RegisterOfAction">Register Of Actions</a> | <a href="#FutureHearings">FUTURE HEARINGS</a> | <span class="currentNavSection">PARTY INFORMATION</span> | <a href="#DocumentsFiled">Documents Filed</a> | <a href="#PastProceedings">Past Proceedings</a></div>        <table class="dataTable">
+            <tr>
+                <td class="KeyField">ALCARAZ LAURA</td>
+                <td>Plaintiff</td>
+            </tr>
+            <tr>
+                <td class="KeyField">LOS ANGELES COUNTY METROPOLITAN TRANSPORTATION AUTHORITY A PUBLIC ENTITY</td>
+                <td>Defendant</td>
+            </tr>
+            <tr>
+                <td class="KeyField">NALBANDYAN ARUTYUN HARRY ESQ.</td>
+                <td>Attorney for Plaintiff</td>
+            </tr>
+            <tr>
+                <td class="KeyField">WAINFELD GABRIEL HORACE ESQ.</td>
+                <td>Attorney for Defendant</td>
+            </tr>
+    </table>
+    <div class="bottomSpacer"></div>
+        <a name="DocumentsFiled"></a>
+        <div class="caseInfoHeader">Documents Filed </div>
+        <hr class="headerDivider" />
+<div class="quickNavigation"><a href="#CaseInformation">Case Information</a> | <a href="#RegisterOfAction">Register Of Actions</a> | <a href="#FutureHearings">FUTURE HEARINGS</a> | <a href="#Parties">PARTY INFORMATION</a> | <span class="currentNavSection">Documents Filed</span> | <a href="#PastProceedings">Past Proceedings</a></div>                    <table class="dataTable">
+                                        <tr>
+                                            <td class="KeyField">12/2/2025</td>
+                                            <td>
+                                                Motion to Vacate    
+Dismissal                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/3/2024</td>
+                                            <td>
+                                                Request for Dismissal 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/28/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Order to Show Cause Re: Dismissal (Settlement))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/25/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Order to Show Cause Re: Dismissal (Settlement))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Certificate of Mailing for 
+(Court Order re: Notice of Settlement of Entire Case) of 05/09/2024                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Court Order re: Notice of Settlement of Entire Case)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Notice of Settlement of Entire Case 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Motion to Be Relieved as Counsel 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Motion to Be Relieved as Counsel 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. FIVE: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE &#x27;GOLDEN RULE&#x27; OR &#x27;REPTILE THEORY&#x27; ARGUMENTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. FOUR: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT EVIDENCE OF PLAINTIFFS&#x27; MEDICAL CHARGES; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. ONE: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT TESTIMONY OF PLAINTIFFS&#x27; EXPERT WITNESSES TO THOSE OPINIONS AND CONCLUSIONS TESTIFIED TO AT THEIR DEPOSITIONS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. SEVEN: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT THE SCOPE OF TESTIMONY OF PLAINTIFF&#x27;S NON-RETAINED EXPERTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. SIX: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE ANY STATEMENT, ARGUMENT, OR SUGGESTION THAT DEFENDANT&#x27;S EXPERTS IMPROPERLY REACHED THEIR OPINIONS BY FAILING TO PHYSICALLY EXAMINE PLAINTIFF; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARAITION OF GABRIEL H                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. THREE: DEFENDANT&#x27;S  THAT NO ACTUAL OR POTENTIAL DOLLAR AMOUNT OF DAMAGES IN THIS OR ANY OTHER HYPOTHETICAL CASE BE MENTIONED DURING VOIR DIRE EXAMINATION; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. TWO: DEFENDANT&#x27;S MOTION IN LIMINE TO EXCLUDE ANY EVIDENCE OR WITNESSES PLAINTIFFS FAILED TO IDENTIFY DURING DISCOVERY; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/7/2024</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/6/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Bifurcate of Issues at Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/26/2024</td>
+                                            <td>
+                                                Reply    
+to Plaintiff&#x27;s  Opposition to Motion for Bifurcation of Issues at Trial; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/23/2024</td>
+                                            <td>
+                                                Certificate of Mailing for 
+((1) Hearing on Motion to Compel Further Discovery Responses; ...) of 02/23/2024                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/23/2024</td>
+                                            <td>
+                                                Minute Order 
+ ((1) Hearing on Motion to Compel Further Discovery Responses; ...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/22/2024</td>
+                                            <td>
+                                                Opposition    
+Plaintiff&#x27;s Opposition to Defendant&#x27;s Motion to Bifurcate the Issues of Liability and Damages at Trial                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/13/2024</td>
+                                            <td>
+                                                Reply    
+TO PLAINTIFFS OPPOSITION TO MOTION TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; DECLARATION OF JOSHUA B. ADELPOUR                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/13/2024</td>
+                                            <td>
+                                                Reply    
+TO PLAINTIFFS OPPOSITION TOMOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DECLARATION OF JOSHUA B. ADELPOUR                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2024</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO COMPEL FURTHER RESPONSES TO  FORM INTERROGATORIES SET TWO;  MEMORANDUM OF POINTS AND  AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2024</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO DEEM FURTHER RESPONSES TO  REQUEST FOR ADMISSION ADMITTED  AGAINST PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/7/2024</td>
+                                            <td>
+                                                Motion to Bifurcate 
+of Issues at Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+DEFENDANT MOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DEMAND FOR MONETARY SANCTIONS AGAINST PLAINTIFF, LAURA ELISA RODRIGUEZ, AND HER ATTORNEY OF RECORD,                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; REQUEST FOR MONETARY SANCTIONS;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/12/2023</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/8/2023</td>
+                                            <td>
+                                                Order    
+[Proposed] Order                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/6/2023</td>
+                                            <td>
+                                                Stipulation and Order    
+and Good Cause to Continue Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/30/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/30/2023</td>
+                                            <td>
+                                                Notice    
+Results of Informal Discovery Conference                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/28/2023</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO COMPEL THE DEFENSE MEDICAL  EXAMINATION OF PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/15/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/13/2023</td>
+                                            <td>
+                                                Informal Discovery Conference Form For Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/9/2023</td>
+                                            <td>
+                                                Motion to Compel    
+the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/20/2023</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/24/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Continue Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/24/2023</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/31/2023</td>
+                                            <td>
+                                                Motion to Continue Trial Date 
+By Defendants                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/22/2023</td>
+                                            <td>
+                                                Notice of Change of Address or Other Contact Information 
+                                            </td>
+                                            <td>Filed by Arutyun Harry Nalbandyan, Esq. (Attorney)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/29/2023</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/27/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/14/2023</td>
+                                            <td>
+                                                Opposition    
+Plaintiff Laura Rodriguez&#x27;s Opposition to Defendant&#x27;s Motiont o Compel Deposition of Plaintiff: request for Denial of Monetary sanctions against Plainitff and Plaintiff&#x27;s Counsel                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/1/2023</td>
+                                            <td>
+                                                Motion to Compel    
+Plaintiff Laura Elisa Rodrigues Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/4/2022</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/3/2022</td>
+                                            <td>
+                                                Order    
+to continue trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/30/2022</td>
+                                            <td>
+                                                Stipulation and Order    
+and Good Cause to Continue Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/10/2022</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2022</td>
+                                            <td>
+                                                [Proposed Order] and Stipulation to Continue Trial, FSC (and Related Motion/Discovery Dates) Personal Injury Courts Only   (Central District) 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/24/2022</td>
+                                            <td>
+                                                Motion to Continue Trial Date 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/21/2022</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Ex Parte Application to Continue Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/20/2022</td>
+                                            <td>
+                                                Ex Parte Application    
+to Continue Trial                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2021</td>
+                                            <td>
+                                                Notice of Posting of Jury Fees 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/7/2021</td>
+                                            <td>
+                                                Notice of Taking Motions Off-Calendar 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff&#x27;s Motion to Compel Defendant Los Angeles County Metropolitan Authority&#x27;s Responses to Plaintiff&#x27;s Request for Production, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff&#x27;s Motion to Compel Further Responses to Plaintiff&#x27;s Special Interrogatories, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff&#x27;s Motion to Deem Admitted Request for Admissions, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/13/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/6/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/23/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/21/2021</td>
+                                            <td>
+                                                Informal Discovery Conference 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/7/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/6/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/21/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/14/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO COMPEL DEFENDANT LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S FURTHER RESPONSES TO PLAINTIFF?S REQUEST FOR SPECIAL INTERROGATORIES, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO COMPEL DEFENDANTS LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S RESPONSES TO PLAINTIFF?S REQUEST FOR PRODUCTION, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Deem RFA&#x27;s Admitted 
+FOR ORDER DEEMING ADMITTED TRUTH OF FACTS AND GENUINENESS OF DOCUMENTS AS TO DEFENDANT RESPONSES TO PLAINTIFF?S REQUEST FOR ADMISSIONS, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/24/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Plaintiff&#x27;s Motion to Quash Defendant&#x27;s Subpoenas ...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/17/2021</td>
+                                            <td>
+                                                Reply    
+Plaintiff Laura Rodriguez Reply To Defendants Opposition To Plaintiffs Motion To Quash Or Modify Defendants Subpoena For The Production Of Medical Records Served On Third Parties                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/5/2021</td>
+                                            <td>
+                                                Opposition    
+Defendant&#x27;s Oposition to Plaintiffs&#x27; Motion to Quash Defendant&#x27;s Subpoenas for Plaintiff&#x27;s Medical, Billing, Radiological and Insurance Records                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/22/2021</td>
+                                            <td>
+                                                Motion to Quash 
+Defendant&#x27;s Subpoenas to Providence Holy Cross Medical Center and Olive View UCLA Medical Center  for Plaintiffs&#x27; Medical, Billing, Radiological, and Insurance Records                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/22/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/20/2020</td>
+                                            <td>
+                                                Answer 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/20/2020</td>
+                                            <td>
+                                                Demand for Jury Trial 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/27/2020</td>
+                                            <td>
+                                                Proof of Personal Service 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/21/2020</td>
+                                            <td>
+                                                Summons 
+on Complaint                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/5/2020</td>
+                                            <td>
+                                                Certificate of Mailing for 
+[PI General Order]                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/5/2020</td>
+                                            <td>
+                                                PI General Order 
+                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Application And Order For Appointment of Guardian Ad Litem 
+for Laura E.                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Civil Case Cover Sheet 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Complaint 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Notice of Case Assignment - Unlimited Civil Case 
+                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                    </table>
+        <div class="bottomSpacer"></div>
+        <a name="PastProceedings"></a>
+        <div class="caseInfoHeader">Proceedings Held </div>
+        <hr class="headerDivider" />
+<div class="quickNavigation"><a href="#CaseInformation">Case Information</a> | <a href="#RegisterOfAction">Register Of Actions</a> | <a href="#FutureHearings">FUTURE HEARINGS</a> | <a href="#Parties">PARTY INFORMATION</a> | <a href="#DocumentsFiled">Documents Filed</a> | <span class="currentNavSection">Past Proceedings</span></div>                    <table class="dataTable">
+                                <tr>
+                                    <td class="KeyField">3/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to be Relieved as Counsel
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/24/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Join Necessary Party
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/20/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Confirm Arbitration Award
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/17/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Disqualify Counsel
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/17/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Transfer
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/4/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion for Attorney Fees
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/4/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Join Necessary Party
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/4/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Set Aside/Vacate Dismissal (CCP 473)
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/4/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Strike (not anti-SLAPP) - without Demurrer
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Continue Trial
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Disqualify Counsel
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Join Necessary Party
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Join Necessary Party
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Set Aside/Vacate Default and Default Judgment (CCP 473.5)
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/3/2026 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Strike (not anti-SLAPP) - without Demurrer
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/26/2025 1:30 PM</td>
+                        <td>Department  27</td>
+                        <td>
+                            Hearing on Motion to Vacate   
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/17/2024 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Order to Show Cause Re: Dismissal (Settlement)
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">8/28/2024 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Order to Show Cause Re: Dismissal (Settlement)
+                                    </td>
+                                    <td>
+Not Held - Continued - Party&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">6/25/2024 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Order to Show Cause Re: Dismissal (Settlement)
+                                    </td>
+                                    <td>
+Not Held - Continued - Party&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/31/2024 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Jury Trial
+                                    </td>
+                                    <td>
+Not Held - Advanced and Vacated
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/29/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to be Relieved as Counsel
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/29/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to be Relieved as Counsel
+                                    </td>
+                                    <td>
+Not Held - Advanced and Vacated
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/28/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to be Relieved as Counsel
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/17/2024 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Final Status Conference
+                                    </td>
+                                    <td>
+Not Held - Advanced and Vacated
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">5/9/2024 3:41 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Court Order
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">3/6/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Bifurcate
+                                    </td>
+                                    <td>
+Held - Motion Denied
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/23/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Held - Motion Granted
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/23/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Held - Motion Granted
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/31/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/31/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/18/2024 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Jury Trial
+                                    </td>
+                                    <td>
+Not Held - Continued - Stipulation
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/4/2024 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Final Status Conference
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/4/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/4/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/3/2024 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/11/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/11/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/11/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/8/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/8/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">11/30/2023 11:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Held
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">11/15/2023 11:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">11/2/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/31/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/31/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/17/2023 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Non-Jury Trial
+                                    </td>
+                                    <td>
+Held - Continued
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/13/2023 11:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/6/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/6/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">10/3/2023 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Final Status Conference
+                                    </td>
+                                    <td>
+Held - Continued
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/18/2023 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Order to Show Cause Re: Dismissal
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">8/24/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Continue Trial
+                                    </td>
+                                    <td>
+Held - Motion Granted
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">8/9/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Continue Trial
+                                    </td>
+                                    <td>
+Not Held - Rescheduled by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">3/27/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">3/27/2023 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel   
+                                    </td>
+                                    <td>
+Held - Motion Denied
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">12/14/2022 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Non-Jury Trial
+                                    </td>
+                                    <td>
+Not Held - Continued - Stipulation
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">11/30/2022 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Final Status Conference
+                                    </td>
+                                    <td>
+Not Held - Continued - Stipulation
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">3/21/2022 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Non-Jury Trial
+                                    </td>
+                                    <td>
+Not Held - Advanced and Continued - by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">3/7/2022 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Final Status Conference
+                                    </td>
+                                    <td>
+Not Held - Advanced and Continued - by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/17/2022 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Continue Trial
+                                    </td>
+                                    <td>
+Not Held - Vacated by Court
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">1/21/2022 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Ex Parte Application   
+                                    </td>
+                                    <td>
+Held
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/14/2021 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/14/2021 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/14/2021 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Deem Request for Admissions Admitted
+                                    </td>
+                                    <td>
+Not Held - Taken Off Calendar by Party
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/13/2021 08:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Deem Request for Admissions Admitted
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/1/2021 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">9/1/2021 10:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Compel Further Discovery Responses
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">8/13/2021 11:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Held
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">8/6/2021 11:30 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">7/7/2021 11:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Held - Continued
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">7/6/2021 11:00 AM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Informal Discovery Conference (IDC)
+                                    </td>
+                                    <td>
+Not Held - Continued - Court&#x27;s Motion
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="KeyField">2/24/2021 1:30 PM</td>
+                        <td>Department  29</td>
+                        <td>
+                            Hearing on Motion to Quash   
+                                    </td>
+                                    <td>
+Held - Motion Granted
+                                    </td>
+                                </tr>
+                    </table>
+        <div class="bottomSpacer"></div>
+    <a name="RegisterOfAction"></a>
+    <div class="caseInfoHeader">Register Of Actions </div>
+    <hr class="headerDivider" />
+<div class="quickNavigation"><a href="#CaseInformation">Case Information</a> | <span class="currentNavSection">Register Of Actions</span> | <a href="#FutureHearings">FUTURE HEARINGS</a> | <a href="#Parties">PARTY INFORMATION</a> | <a href="#DocumentsFiled">Documents Filed</a> | <a href="#PastProceedings">Past Proceedings</a></div>        <table class="dataTable">
+            <tr>
+                <td class="KeyField">3/11/2026</td>
+                <td>Hearing on Motion to Set Aside/Vacate Judgment (CCP 473) scheduled for 04/07/2026 at 08:30 AM in Spring Street Courthouse at Department 2 Not Held - Vacated by Court on 03/11/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/14/2026</td>
+                <td>Hearing on Motion to be Relieved as Counsel scheduled for 03/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 02/14/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/29/2026</td>
+                <td>Hearing on Motion to Join Necessary Party scheduled for 02/24/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/29/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/28/2026</td>
+                <td>Hearing on Application for Writ of Attachment (CCP 484.040) scheduled for 04/10/2026 at 08:30 AM in Van Nuys Courthouse East at Department A Not Held - Vacated by Court on 01/28/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/28/2026</td>
+                <td>Hearing on Motion to Confirm Arbitration Award scheduled for 02/20/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/28/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/28/2026</td>
+                <td>Hearing on Motion to Disqualify Counsel scheduled for 02/17/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/28/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/28/2026</td>
+                <td>Hearing on Motion to Transfer scheduled for 02/17/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/28/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/6/2026</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/06/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/6/2026</td>
+                <td>Hearing on Motion to Join Necessary Party scheduled for 02/04/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/06/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/6/2026</td>
+                <td>Hearing on Motion to Disqualify Counsel scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/06/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/6/2026</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 12/01/2027 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/06/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion for Attorney Fees scheduled for 02/04/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Strike (not anti-SLAPP) - without Demurrer scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Strike (not anti-SLAPP) - without Demurrer scheduled for 02/04/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Set Aside/Vacate Dismissal (CCP 473) scheduled for 02/04/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Join Necessary Party scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Set Aside/Vacate Default and Default Judgment (CCP 473.5) scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/3/2026</td>
+                <td>Hearing on Motion to Join Necessary Party scheduled for 02/03/2026 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 01/03/2026</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/9/2025</td>
+                <td>Hearing on Motion to Vacate Dismissal scheduled for 12/26/2025 at 01:30 PM in Spring Street Courthouse at Department 27 Not Held - Vacated by Court on 12/09/2025</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/2/2025</td>
+                <td>Motion to Vacate Dismissal; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/1/2025</td>
+                <td>Case reassigned to Spring Street Courthouse in Department 27 - Hon. Cindy P&#xBF;nuco; Reason: Other</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/4/2024</td>
+                <td>Updated -- Request for Dismissal:         Filed By: Laura Alcaraz (Plaintiff),Laura Elisa Rodriguez (Plaintiff);       Result: Entered  ;     Result Date: 12/04/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/4/2024</td>
+                <td>On the Complaint filed by Laura Alcaraz, et al. on 09/21/2020, entered Request for Dismissal with prejudice filed by Laura Elisa Rodriguez as to the entire action</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/4/2024</td>
+                <td>Order to Show Cause Re: Dismissal (Settlement) scheduled for 12/17/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Vacated by Court on 12/04/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/3/2024</td>
+                <td>Request for Dismissal; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/28/2024</td>
+                <td>Order to Show Cause Re: Dismissal (Settlement) scheduled for 12/17/2024 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/28/2024</td>
+                <td>Minute Order (Order to Show Cause Re: Dismissal (Settlement))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/28/2024</td>
+                <td>Pursuant to the request of plaintiff, Order to Show Cause Re: Dismissal (Settlement) scheduled for 08/28/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Party&#x27;s Motion was rescheduled to 12/17/2024 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/25/2024</td>
+                <td>Order to Show Cause Re: Dismissal (Settlement) scheduled for 08/28/2024 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/25/2024</td>
+                <td>Minute Order (Order to Show Cause Re: Dismissal (Settlement))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/25/2024</td>
+                <td>Pursuant to the request of plaintiff, Order to Show Cause Re: Dismissal (Settlement) scheduled for 06/25/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Party&#x27;s Motion was rescheduled to 08/28/2024 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>Notice of Settlement; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); Vacate Future Dates: No</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>Order to Show Cause Re: Dismissal (Settlement) scheduled for 06/25/2024 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>Minute Order (Court Order re: Notice of Settlement of Entire Case)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>Certificate of Mailing for (Court Order re: Notice of Settlement of Entire Case) of 05/09/2024; Filed by: Clerk</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>On the Court&#x27;s own motion, Jury Trial scheduled for 05/31/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Advanced and Vacated on 05/09/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>On the Court&#x27;s own motion, Final Status Conference scheduled for 05/17/2024 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Advanced and Vacated on 05/09/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/9/2024</td>
+                <td>On the Court&#x27;s own motion, Hearing on Motion to be Relieved as Counsel scheduled for 05/29/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Advanced and Vacated on 05/09/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">5/1/2024</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to be Relieved as Counsel scheduled for 05/29/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 05/01/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/23/2024</td>
+                <td>Hearing on Motion to be Relieved as Counsel scheduled for 05/29/2024 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/23/2024</td>
+                <td>Hearing on Motion to be Relieved as Counsel scheduled for 05/29/2024 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Motion to Be Relieved as Counsel; Filed by: Attorney</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Proof of Service (not Summons and Complaint); Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Proof of Service (not Summons and Complaint); Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Motion to Be Relieved as Counsel; Filed by: Attorney</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil; Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Proof of Service (not Summons and Complaint); Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Proof of Service (not Summons and Complaint); Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/22/2024</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to be Relieved as Counsel scheduled for 05/28/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 05/29/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. ONE: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT TESTIMONY OF PLAINTIFFS&#x27; EXPERT WITNESSES TO THOSE OPINIONS AND CONCLUSIONS TESTIFIED TO AT THEIR DEPOSITIONS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. TWO: DEFENDANT&#x27;S MOTION IN LIMINE TO EXCLUDE ANY EVIDENCE OR WITNESSES PLAINTIFFS FAILED TO IDENTIFY DURING DISCOVERY; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. THREE: DEFENDANT&#x27;S THAT NO ACTUAL OR POTENTIAL DOLLAR AMOUNT OF DAMAGES IN THIS OR ANY OTHER HYPOTHETICAL CASE BE MENTIONED DURING VOIR DIRE EXAMINATION; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. FOUR: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT EVIDENCE OF PLAINTIFFS&#x27; MEDICAL CHARGES; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. FIVE: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE &#x27;GOLDEN RULE&#x27; OR &#x27;REPTILE THEORY&#x27; ARGUMENTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. SIX: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE ANY STATEMENT, ARGUMENT, OR SUGGESTION THAT DEFENDANT&#x27;S EXPERTS IMPROPERLY REACHED THEIR OPINIONS BY FAILING TO PHYSICALLY EXAMINE PLAINTIFF; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARAITION OF GABRIEL H; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/19/2024</td>
+                <td>Motion in Limine NO. SEVEN: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT THE SCOPE OF TESTIMONY OF PLAINTIFF&#x27;S NON-RETAINED EXPERTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/7/2024</td>
+                <td>Notice of Ruling; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/6/2024</td>
+                <td>Updated -- Motion to Bifurcate of Issues at Trial:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Denied  ;     Result Date: 03/06/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/6/2024</td>
+                <td>Minute Order (Hearing on Motion to Bifurcate of Issues at Trial)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/6/2024</td>
+                <td>Hearing on Motion to Bifurcate of Issues at Trial scheduled for 03/06/2024 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 03/06/2024; Result Type to Held - Motion Denied</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/26/2024</td>
+                <td>Reply to Plaintiff&#x27;s Opposition to Motion for Bifurcation of Issues at Trial; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; REQUEST FOR MONETARY SANCTIONS;:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Granted  ;     Result Date: 02/23/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses DEFENDANT MOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DEMAND FOR MONETARY SANCTIONS AGAINST PLAINTIFF, LAURA ELISA RODRIGUEZ, AND HER ATTORNEY OF RECORD,:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Granted  ;     Result Date: 02/23/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Minute Order ((1) Hearing on Motion to Compel Further Discovery Responses; ...)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Certificate of Mailing for ((1) Hearing on Motion to Compel Further Discovery Responses; ...) of 02/23/2024; Filed by: Clerk</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 02/23/2024 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 02/23/2024; Result Type to Held - Motion Granted</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/23/2024</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 02/23/2024 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 02/23/2024; Result Type to Held - Motion Granted</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/22/2024</td>
+                <td>Opposition Plaintiff&#x27;s Opposition to Defendant&#x27;s Motion to Bifurcate the Issues of Liability and Damages at Trial; Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/13/2024</td>
+                <td>Reply TO PLAINTIFFS OPPOSITION TOMOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DECLARATION OF JOSHUA B. ADELPOUR; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/13/2024</td>
+                <td>Reply TO PLAINTIFFS OPPOSITION TO MOTION TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; DECLARATION OF JOSHUA B. ADELPOUR; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2024</td>
+                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S OPPOSITION TO DEFENDANT&#x27;S MOTION TO COMPEL FURTHER RESPONSES TO FORM INTERROGATORIES SET TWO; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GERARDO MORENO, JR. Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2024</td>
+                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S OPPOSITION TO DEFENDANT&#x27;S MOTION TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSION ADMITTED AGAINST PLAINTIFF LAURA RODRIGUEZ; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GERARDO MORENO, JR. Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/7/2024</td>
+                <td>Motion to Bifurcate of Issues at Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/7/2024</td>
+                <td>Hearing on Motion to Bifurcate of Issues at Trial scheduled for 03/06/2024 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/4/2024</td>
+                <td>Final Status Conference scheduled for 05/17/2024 at 10:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/4/2024</td>
+                <td>Pursuant to written stipulation, Jury Trial scheduled for 01/18/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Stipulation was rescheduled to 05/31/2024 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/4/2024</td>
+                <td>Final Status Conference scheduled for 01/04/2024 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Vacated by Court on 01/04/2024</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Motion to Compel Further Discovery Responses; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Separate Statement; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses DEFENDANT MOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DEMAND FOR MONETARY SANCTIONS AGAINST PLAINTIFF, LAURA ELISA RODRIGUEZ, AND HER ATTORNEY OF RECORD,:     Name Extension: DEFENDANT MOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DEMAND FOR MONETARY SANCTIONS AGAINST PLAINTIFF, LAURA ELISA RODRIGUEZ, AND HER ATTORNEY OF RECORD,</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Motion to Compel Further Discovery Responses; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Separate Statement; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; REQUEST FOR MONETARY SANCTIONS;:     Name Extension: TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; REQUEST FOR MONETARY SANCTIONS;</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 02/23/2024 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/20/2023</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 02/23/2024 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/12/2023</td>
+                <td>Notice of Continuance of Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/8/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 01/04/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 02/23/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/8/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 01/04/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 02/23/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/8/2023</td>
+                <td>Order [Proposed] Order; Signed and Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/8/2023</td>
+                <td>Updated -- Order [Proposed] Order:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Granted  ;     Result Date: 12/08/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/6/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 01/03/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 12/06/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/6/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Defense Medical Examination scheduled for 12/11/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 12/06/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/6/2023</td>
+                <td>Stipulation and Order and Good Cause to Continue Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/30/2023</td>
+                <td>Notice Results of Informal Discovery Conference; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/30/2023</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/30/2023</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 11/30/2023 at 11:30 AM in Spring Street Courthouse at Department 29 updated: Result Date to 11/30/2023; Result Type to Held</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/28/2023</td>
+                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S OPPOSITION TO DEFENDANT&#x27;S MOTION TO COMPEL THE DEFENSE MEDICAL EXAMINATION OF PLAINTIFF LAURA RODRIGUEZ; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GERARDO MORENO, JR. Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/15/2023</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 11/30/2023 at 11:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/15/2023</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/15/2023</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 11/15/2023 at 11:00 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 11/30/2023 11:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/13/2023</td>
+                <td>Informal Discovery Conference Form For Personal Injury Courts; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/9/2023</td>
+                <td>Motion to Compel the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/9/2023</td>
+                <td>Updated -- Motion to Compel the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125;:     Name Extension changed from the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour to the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125;</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/9/2023</td>
+                <td>Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Defense Medical Examination scheduled for 12/11/2023 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/8/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Alcaraz&#x27;s Defense Medical Examination scheduled for 12/11/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 11/08/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/26/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 12/11/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 01/03/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/26/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 12/08/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 01/04/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/26/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 12/08/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 01/04/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/20/2023</td>
+                <td>Informal Discovery Conference Form for Personal Injury Courts; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/20/2023</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 11/15/2023 at 11:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/15/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 11/02/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 12/08/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/15/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 10/31/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 12/08/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/15/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 10/31/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 12/11/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/13/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Defense Medical Examination scheduled for 10/06/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 01/31/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/13/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Alcaraz&#x27;s Defense Medical Examination scheduled for 10/06/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 01/31/2024 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/13/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Alcaraz&#x27;s Defense Medical Examination scheduled for 01/31/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 12/11/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/13/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Defense Medical Examination scheduled for 01/31/2024 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 12/11/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/11/2023</td>
+                <td>Pursuant to the request of moving party, Informal Discovery Conference (IDC) scheduled for 10/13/2023 at 11:30 AM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 11/15/2023 11:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Updated -- Motion to Continue Trial Date By Defendants:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Granted  ;     Result Date: 08/24/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Notice of Ruling; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Minute Order (Hearing on Motion to Continue Trial)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 08/24/2023 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 08/24/2023; Result Type to Held - Motion Granted</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Final Status Conference scheduled for 10/03/2023 at 10:00 AM in Spring Street Courthouse at Department 29 Held - Continued was rescheduled to 01/04/2024 10:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Non-Jury Trial scheduled for 10/17/2023 at 08:30 AM in Spring Street Courthouse at Department 29 Held - Continued was rescheduled to 01/18/2024 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Updated -- Event scheduled for 01/18/2024 at 08:30 AM in Spring Street Courthouse at Department 29 Type changed from Non-Jury Trial to Jury Trial</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/24/2023</td>
+                <td>Order to Show Cause Re: Dismissal scheduled for 09/18/2023 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Court on 08/24/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/1/2023</td>
+                <td>Updated -- Motion to Continue Trial Date By Defendants:     Name Extension: By Defendants  ;                As To Parties:</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/1/2023</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 08/24/2023 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/31/2023</td>
+                <td>Motion to Continue Trial Date; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/13/2023</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Continue Trial scheduled for 08/09/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Rescheduled by Party was rescheduled to 08/24/2023 01:30 PM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/23/2023</td>
+                <td>Address for Arutyun Harry Nalbandyan, Esq. (Attorney) updated</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/22/2023</td>
+                <td>Notice of Change of Address or Other Contact Information; Filed by: Arutyun Harry Nalbandyan, Esq. (Attorney)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/29/2023</td>
+                <td>Notice of Ruling; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/27/2023</td>
+                <td>Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Deposition scheduled for 03/27/2023 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 03/27/2023; Result Type to Held - Motion Denied</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/27/2023</td>
+                <td>Updated -- Motion to Compel Plaintiff Laura Elisa Rodrigues Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125;:         Filed By: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant);       Result: Granted in Part  ;     Result Date: 03/27/2023</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/27/2023</td>
+                <td>Minute Order (Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s...)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/14/2023</td>
+                <td>Opposition Plaintiff Laura Rodriguez&#x27;s Opposition to Defendant&#x27;s Motiont o Compel Deposition of Plaintiff: request for Denial of Monetary sanctions against Plainitff and Plaintiff&#x27;s Counsel; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/1/2023</td>
+                <td>Motion to Compel Motion to Compel Plaintiff Laura Elisa Rodriguezs Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/1/2023</td>
+                <td>Updated -- Motion to Compel Plaintiff Laura Elisa Rodrigues Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125;:     Name Extension changed from Motion to Compel Plaintiff Laura Elisa Rodriguezs Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour to Plaintiff Laura Elisa Rodrigues Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125;  ;                As To Parties changed from Laura Elisa Rodriguez (Plaintiff) to Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">3/1/2023</td>
+                <td>Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez&#x27;s Deposition scheduled for 03/27/2023 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">12/21/2022</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Plaintiff Laura Alcaraz&#x27;s Deposition scheduled for 03/27/2023 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 12/21/2022</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/4/2022</td>
+                <td>Notice of Continuance of Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/3/2022</td>
+                <td>Order to continue trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/3/2022</td>
+                <td>Pursuant to written stipulation, Non-Jury Trial scheduled for 12/14/2022 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Stipulation was rescheduled to 10/17/2023 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/3/2022</td>
+                <td>Pursuant to written stipulation, Final Status Conference scheduled for 11/30/2022 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Stipulation was rescheduled to 10/03/2023 10:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/30/2022</td>
+                <td>Stipulation and Order and Good Cause to Continue Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/10/2022</td>
+                <td>Notice of Continuance of Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2022</td>
+                <td>[Proposed Order] and Stipulation to Continue Trial, FSC (and Related Motion/Discovery Dates) Personal Injury Courts Only (Central District); Signed and Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2022</td>
+                <td>Pursuant to written stipulation, Final Status Conference scheduled for 03/07/2022 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Advanced and Continued - by Court was rescheduled to 11/30/2022 10:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2022</td>
+                <td>Pursuant to written stipulation, Non-Jury Trial scheduled for 03/21/2022 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Advanced and Continued - by Court was rescheduled to 12/14/2022 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/9/2022</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 02/17/2022 at 01:30 PM in Spring Street Courthouse at Department 29 Not Held - Vacated by Court on 02/09/2022</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/24/2022</td>
+                <td>Motion to Continue Trial Date; Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/24/2022</td>
+                <td>Hearing on Motion to Continue Trial scheduled for 02/17/2022 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/21/2022</td>
+                <td>Updated -- Ex Parte Application to Continue Trial: Filed By: Laura Alcaraz (Plaintiff),Laura Elisa Rodriguez (Plaintiff); Result: Denied; Result Date: 01/21/2022</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/21/2022</td>
+                <td>Minute Order (Hearing on Ex Parte Application to Continue Trial)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/21/2022</td>
+                <td>Hearing on Ex Parte Application to Continue Trial scheduled for 01/21/2022 at 08:30 AM in Spring Street Courthouse at Department 29 updated: Result Date to 01/21/2022; Result Type to Held</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/20/2022</td>
+                <td>Ex Parte Application to Continue Trial; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/20/2022</td>
+                <td>Hearing on Ex Parte Application to Continue Trial scheduled for 01/21/2022 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2021</td>
+                <td>Notice of Posting of Jury Fees; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/7/2021</td>
+                <td>Notice of Taking Motions Off-Calendar; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/7/2021</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Deem Request for Admissions Admitted scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 09/07/2021</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/7/2021</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 09/07/2021</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/7/2021</td>
+                <td>Pursuant to the request of moving party, Hearing on Motion to Compel Further Discovery Responses scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Taken Off Calendar by Party on 09/07/2021</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/30/2021</td>
+                <td>Opposition Opposition to Plaintiff&#x27;s Motion to Compel Further Responses to Plaintiff&#x27;s Special Interrogatories, Set One; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/30/2021</td>
+                <td>Opposition Opposition to Plaintiff&#x27;s Motion to Compel Defendant Los Angeles County Metropolitan Authority&#x27;s Responses to Plaintiff&#x27;s Request for Production, Set One; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/30/2021</td>
+                <td>Opposition Opposition to Plaintiff&#x27;s Motion to Deem Admitted Request for Admissions, Set One; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>Hearing on Motion to Deem Request for Admissions Admitted scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 09/14/2021 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 08/13/2021 at 11:00 AM in Spring Street Courthouse at Department 29 updated: Result Date to 08/13/2021; Result Type to Held</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>On the Court&#x27;s own motion, Hearing on Motion to Compel Further Discovery Responses scheduled for 09/01/2021 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 09/14/2021 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>On the Court&#x27;s own motion, Hearing on Motion to Compel Further Discovery Responses scheduled for 09/01/2021 at 10:00 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 09/14/2021 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/13/2021</td>
+                <td>On the Court&#x27;s own motion, Hearing on Motion to Deem Request for Admissions Admitted scheduled for 09/13/2021 at 08:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 09/14/2021 08:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/6/2021</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 08/13/2021 at 11:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/6/2021</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">8/6/2021</td>
+                <td>On the Court&#x27;s own motion, Informal Discovery Conference (IDC) scheduled for 08/06/2021 at 11:30 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 08/13/2021 11:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/23/2021</td>
+                <td>Informal Discovery Conference Form for Personal Injury Courts; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/21/2021</td>
+                <td>Informal Discovery Conference; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/7/2021</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 08/06/2021 at 11:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/7/2021</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/7/2021</td>
+                <td>On the Court&#x27;s own motion, Informal Discovery Conference (IDC) scheduled for 07/07/2021 at 11:00 AM in Spring Street Courthouse at Department 29 Held - Continued was rescheduled to 08/06/2021 11:30 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/6/2021</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 07/07/2021 at 11:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/6/2021</td>
+                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+            </tr>
+            <tr>
+                <td class="KeyField">7/6/2021</td>
+                <td>Reset - Court Unavailable, Informal Discovery Conference (IDC) scheduled for 07/06/2021 at 11:00 AM in Spring Street Courthouse at Department 29 Not Held - Continued - Court&#x27;s Motion was rescheduled to 07/07/2021 11:00 AM</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/21/2021</td>
+                <td>Informal Discovery Conference Form for Personal Injury Courts; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/15/2021</td>
+                <td>Informal Discovery Conference (IDC) scheduled for 07/06/2021 at 11:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">6/14/2021</td>
+                <td>Informal Discovery Conference Form for Personal Injury Courts; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses TO COMPEL DEFENDANT LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S FURTHER RESPONSES TO PLAINTIFF?S REQUEST FOR SPECIAL INTERROGATORIES, SET ONE;: Name Extension: TO COMPEL DEFENDANT LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S FURTHER RESPONSES TO PLAINTIFF?S REQUEST FOR SPECIAL INTERROGATORIES, SET ONE;; As To Parties changed from Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant) to Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses TO COMPEL DEFENDANT LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S FURTHER RESPONSES TO PLAINTIFF?S REQUEST FOR SPECIAL INTERROGATORIES, SET ONE;: As To Parties changed from Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant) to Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Updated -- Motion to Compel Further Discovery Responses TO COMPEL DEFENDANTS LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S RESPONSES TO PLAINTIFF?S REQUEST FOR PRODUCTION, SET ONE;: Name Extension: TO COMPEL DEFENDANTS LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S RESPONSES TO PLAINTIFF?S REQUEST FOR PRODUCTION, SET ONE;; As To Parties changed from Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant) to Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Updated -- Motion to Deem RFA&#x27;s Admitted FOR ORDER DEEMING ADMITTED TRUTH OF FACTS AND GENUINENESS OF DOCUMENTS AS TO DEFENDANT RESPONSES TO PLAINTIFF?S REQUEST FOR ADMISSIONS, SET ONE;: Name Extension: FOR ORDER DEEMING ADMITTED TRUTH OF FACTS AND GENUINENESS OF DOCUMENTS AS TO DEFENDANT RESPONSES TO PLAINTIFF?S REQUEST FOR ADMISSIONS, SET ONE;; As To Parties changed from Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant) to Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 09/01/2021 at 10:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Hearing on Motion to Compel Further Discovery Responses scheduled for 09/01/2021 at 10:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/30/2021</td>
+                <td>Hearing on Motion to Deem Request for Admissions Admitted scheduled for 09/13/2021 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Motion to Compel Further Discovery Responses; Filed by: Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Separate Statement; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Motion to Compel Further Discovery Responses; Filed by: Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Separate Statement; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Motion to Deem RFA&#x27;s Admitted; Filed by: Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">4/29/2021</td>
+                <td>Separate Statement; Filed by: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/24/2021</td>
+                <td>Updated -- Motion to Quash Defendant&#x27;s Subpoenas to Providence Holy Cross Medical Center and Olive View UCLA Medical Center for Plaintiffs&#x27; Medical, Billing, Radiological, and Insurance Records: Filed By: Laura Alcaraz (Plaintiff); Result: Granted; Result Date: 02/24/2021</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/24/2021</td>
+                <td>Minute Order (Hearing on Plaintiff&#x27;s Motion to Quash Defendant&#x27;s Subpoenas ...)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/24/2021</td>
+                <td>Hearing on Motion to Quash Defendant&#x27;s Subpoenas Issued to Providence Holy Cross Medical Center and Olive View UCLA Medical Center for Plaintiffs&#x27; Medical, Billing, Radiological, and Insurance Records scheduled for 02/24/2021 at 01:30 PM in Spring Street Courthouse at Department 29 updated: Result Date to 02/24/2021; Result Type to Held - Motion Granted</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/18/2021</td>
+                <td>Updated -- Motion to Quash Defendant&#x27;s Subpoenas to Providence Holy Cross Medical Center and Olive View UCLA Medical Center for Plaintiffs&#x27; Medical, Billing, Radiological, and Insurance Records: Name Extension changed from DEFENDANT?S SUBPOENAS FOR PLAINTIFFS? MEDICAL, BILLING, RADIOLOGICAL, AND INSURANCE RECORDS; to Defendant&#x27;s Subpoenas to Providence Holy Cross Medical Center and Olive View UCLA Medical Center for Plaintiffs&#x27; Medical, Billing, Radiological, and Insurance Records; As To Parties: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/18/2021</td>
+                <td>Updated -- Gabriel Horace Wainfeld, Esq. (Attorney): Organization Name changed from Law Offices of York &amp; Wainfeld to York &amp; Wainfeld; Name Suffix: Esq. Middle Name: Horace</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/18/2021</td>
+                <td>Address for Gabriel Horace Wainfeld, Esq. (Attorney) updated</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/18/2021</td>
+                <td>Updated -- Arutyun Harry Nalbandyan, Esq. (Attorney): Organization Name changed from LEVIN &amp; NALBANDYAN to Levin &amp; Nalbandyan, LLP; Name Suffix: Esq.</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/18/2021</td>
+                <td>Address for Arutyun Harry Nalbandyan, Esq. (Attorney) updated</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/17/2021</td>
+                <td>Reply Plaintiff Laura Rodriguez Reply To Defendants Opposition To Plaintiffs Motion To Quash Or Modify Defendants Subpoena For The Production Of Medical Records Served On Third Parties; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">2/5/2021</td>
+                <td>Opposition Defendant&#x27;s Oposition to Plaintiffs&#x27; Motion to Quash Defendant&#x27;s Subpoenas for Plaintiff&#x27;s Medical, Billing, Radiological and Insurance Records; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/25/2021</td>
+                <td>Updated -- Motion to Quash DEFENDANT?S SUBPOENAS FOR PLAINTIFFS? MEDICAL, BILLING, RADIOLOGICAL, AND INSURANCE RECORDS;: Name Extension: DEFENDANT?S SUBPOENAS FOR PLAINTIFFS? MEDICAL, BILLING, RADIOLOGICAL, AND INSURANCE RECORDS;; As To Parties: removed</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/25/2021</td>
+                <td>Hearing on Motion to Quash Plaintiffs&#x27; Motion to Quash Defendant&#x27;s Subpoenas for Plaintiffs&#x27; Records scheduled for 02/24/2021 at 01:30 PM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/22/2021</td>
+                <td>Motion to Quash; Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">1/22/2021</td>
+                <td>Separate Statement; Filed by: Laura Alcaraz (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/20/2020</td>
+                <td>Answer; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); As to: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">11/20/2020</td>
+                <td>Demand for Jury Trial; Filed by: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/27/2020</td>
+                <td>Proof of Personal Service; Filed by: Laura Alcaraz (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant); Service Date: 10/22/2020; Service Cost: 78.91; Service Cost Waived: No</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/21/2020</td>
+                <td>Summons on Complaint; Issued and Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/5/2020</td>
+                <td>PI General Order; Filed by: Clerk</td>
+            </tr>
+            <tr>
+                <td class="KeyField">10/5/2020</td>
+                <td>Certificate of Mailing for [PI General Order]; Filed by: Clerk</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/28/2020</td>
+                <td>Updated -- Application And Order For Appointment of Guardian Ad Litem for Laura E.: Status Date changed from 09/21/2020 to 09/28/2020; Result Date changed from 09/28/2020 to 09/28/2020; As To Parties changed from Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant) to Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/28/2020</td>
+                <td>The case is placed in special status of: Appointment of Guardian Ad Litem</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/28/2020</td>
+                <td>Updated -- Application And Order For Appointment of Guardian Ad Litem for Laura E.: Filed By: Laura Alcaraz (Plaintiff),Laura Elisa Rodriguez (Plaintiff); Result: Granted; Result Date: 09/28/2020</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/22/2020</td>
+                <td>Case assigned to Hon. Kristin S. Escalante in Department 29 Spring Street Courthouse</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/22/2020</td>
+                <td>Final Status Conference scheduled for 03/07/2022 at 10:00 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/22/2020</td>
+                <td>Non-Jury Trial scheduled for 03/21/2022 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/22/2020</td>
+                <td>Order to Show Cause Re: Dismissal scheduled for 09/18/2023 at 08:30 AM in Spring Street Courthouse at Department 29</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2020</td>
+                <td>Complaint; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2020</td>
+                <td>Civil Case Cover Sheet; Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2020</td>
+                <td>Notice of Case Assignment - Unlimited Civil Case; Filed by: Clerk</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2020</td>
+                <td>Updated -- Application And Order For Appointment of Guardian Ad Litem for Laura E.:     Status Date changed from 09/28/2020 to 09/21/2020</td>
+            </tr>
+            <tr>
+                <td class="KeyField">9/21/2020</td>
+                <td>Application And Order For Appointment of Guardian Ad Litem for Laura E. Signed and Filed by: Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff); As to: Laura Elisa Rodriguez (Plaintiff)</td>
+            </tr>
+    </table>
+    <div class="bottomSpacer"></div>
+    <div class="bottomSpacer"></div>
+            <table width="100%">
+                <tr>
+            <td align="right"><a href="#top">Back To Top </a></td>
+                </tr>
+            </table>
+
+                    <!--stuff end-->
+
+                </div>
+                <script>var contentArea = "#divMainContent";</script>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts Loaded at End -->
+    <!-- Provides performance benefit. Also fix for Asp.Net error, "The Controls collection cannot be modified because the control contains code blocks (i.e. < % ... % >)" -->
+    <!-- See http://www.aspdotnet-suresh.com/2011/12/aspnet-controls-collection-cannot-be.html -->
+    <!--JQuery-->
+
+    <script src="/casesummary/v2web3/js/site.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/js/validation.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/jquery.cookie.js" type="text/javascript"></script>
+
+    <!--Google Analytics-->
+    <script src="/casesummary/v2web3/commonv4/scripts/analytics.js" type="text/javascript"></script>
+
+    <!-- lascweb -->
+    <script src="/casesummary/v2web3/commonv4/scripts/config.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/common.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/tooltip.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/linkredirect.js" type="text/javascript"></script>
+    <script src="/casesummary/v2web3/commonv4/scripts/globaljs.js" type="text/javascript"></script>  <!-- Nav Menu -->
+    <!-- ajax control toolkit extension -->
+    <script src="/casesummary/v2web3/commonv4/scripts/ajaxcontroltoolkit.js" type="text/javascript"></script>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/0218f99cfe.js" crossorigin="anonymous"></script>
+
+    <!-- End Lascweb -->
+    
+
+</body>
+</html>
+
