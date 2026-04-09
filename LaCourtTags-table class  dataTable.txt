@@ -1,0 +1,684 @@
+<table class="dataTable">
+                                        <tbody><tr>
+                                            <td class="KeyField">12/2/2025</td>
+                                            <td>
+Motion to Vacate    
+Dismissal                                            </td>
+Filed by Laura Alcaraz (Plaintiff)
+Laura Elisa Rodriguez (Plaintiff)
+
+
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/3/2024</td>
+                                            <td>
+                                                Request for Dismissal 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/28/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Order to Show Cause Re: Dismissal (Settlement))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/25/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Order to Show Cause Re: Dismissal (Settlement))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Certificate of Mailing for 
+(Court Order re: Notice of Settlement of Entire Case) of 05/09/2024                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Court Order re: Notice of Settlement of Entire Case)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">5/9/2024</td>
+                                            <td>
+                                                Notice of Settlement of Entire Case 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Declaration in Support of Attorney's Motion to Be Relieved as Counsel-Civil 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Declaration in Support of Attorney's Motion to Be Relieved as Counsel-Civil 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Motion to Be Relieved as Counsel 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Motion to Be Relieved as Counsel 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/22/2024</td>
+                                            <td>
+                                                Proof of Service (not Summons and Complaint) 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. FIVE: DEFENDANT'S MOTION IN LIMINE TO PRECLUDE 'GOLDEN RULE' OR 'REPTILE THEORY' ARGUMENTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. FOUR: DEFENDANT'S MOTION IN LIMINE TO LIMIT EVIDENCE OF PLAINTIFFS' MEDICAL CHARGES; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. ONE: DEFENDANT'S MOTION IN LIMINE TO LIMIT TESTIMONY OF PLAINTIFFS' EXPERT WITNESSES TO THOSE OPINIONS AND CONCLUSIONS TESTIFIED TO AT THEIR DEPOSITIONS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. SEVEN: DEFENDANT'S MOTION IN LIMINE TO LIMIT THE SCOPE OF TESTIMONY OF PLAINTIFF'S NON-RETAINED EXPERTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. SIX: DEFENDANT'S MOTION IN LIMINE TO PRECLUDE ANY STATEMENT, ARGUMENT, OR SUGGESTION THAT DEFENDANT'S EXPERTS IMPROPERLY REACHED THEIR OPINIONS BY FAILING TO PHYSICALLY EXAMINE PLAINTIFF; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARAITION OF GABRIEL H                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. THREE: DEFENDANT'S  THAT NO ACTUAL OR POTENTIAL DOLLAR AMOUNT OF DAMAGES IN THIS OR ANY OTHER HYPOTHETICAL CASE BE MENTIONED DURING VOIR DIRE EXAMINATION; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/19/2024</td>
+                                            <td>
+                                                Motion in Limine    
+NO. TWO: DEFENDANT'S MOTION IN LIMINE TO EXCLUDE ANY EVIDENCE OR WITNESSES PLAINTIFFS FAILED TO IDENTIFY DURING DISCOVERY; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/7/2024</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/6/2024</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Bifurcate of Issues at Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/26/2024</td>
+                                            <td>
+                                                Reply    
+to Plaintiff's  Opposition to Motion for Bifurcation of Issues at Trial; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/23/2024</td>
+                                            <td>
+                                                Certificate of Mailing for 
+((1) Hearing on Motion to Compel Further Discovery Responses; ...) of 02/23/2024                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/23/2024</td>
+                                            <td>
+                                                Minute Order 
+ ((1) Hearing on Motion to Compel Further Discovery Responses; ...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/22/2024</td>
+                                            <td>
+                                                Opposition    
+Plaintiff's Opposition to Defendant's Motion to Bifurcate the Issues of Liability and Damages at Trial                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/13/2024</td>
+                                            <td>
+                                                Reply    
+TO PLAINTIFFS OPPOSITION TO MOTION TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; DECLARATION OF JOSHUA B. ADELPOUR                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/13/2024</td>
+                                            <td>
+                                                Reply    
+TO PLAINTIFFS OPPOSITION TOMOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DECLARATION OF JOSHUA B. ADELPOUR                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2024</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ'S  OPPOSITION TO DEFENDANT'S MOTION  TO COMPEL FURTHER RESPONSES TO  FORM INTERROGATORIES SET TWO;  MEMORANDUM OF POINTS AND  AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2024</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ'S  OPPOSITION TO DEFENDANT'S MOTION  TO DEEM FURTHER RESPONSES TO  REQUEST FOR ADMISSION ADMITTED  AGAINST PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/7/2024</td>
+                                            <td>
+                                                Motion to Bifurcate 
+of Issues at Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+DEFENDANT MOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DEMAND FOR MONETARY SANCTIONS AGAINST PLAINTIFF, LAURA ELISA RODRIGUEZ, AND HER ATTORNEY OF RECORD,                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; REQUEST FOR MONETARY SANCTIONS;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/20/2023</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/12/2023</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/8/2023</td>
+                                            <td>
+                                                Order    
+[Proposed] Order                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">12/6/2023</td>
+                                            <td>
+                                                Stipulation and Order    
+and Good Cause to Continue Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/30/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/30/2023</td>
+                                            <td>
+                                                Notice    
+Results of Informal Discovery Conference                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/28/2023</td>
+                                            <td>
+                                                Opposition    
+PLAINTIFF LAURA RODRIGUEZ'S  OPPOSITION TO DEFENDANT'S MOTION  TO COMPEL THE DEFENSE MEDICAL  EXAMINATION OF PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/15/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/13/2023</td>
+                                            <td>
+                                                Informal Discovery Conference Form For Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/9/2023</td>
+                                            <td>
+                                                Motion to Compel    
+the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez'; Defendant's Request for Monetary Sanctions in The Amount of 1125;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/20/2023</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/24/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Continue Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/24/2023</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/31/2023</td>
+                                            <td>
+                                                Motion to Continue Trial Date 
+By Defendants                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/22/2023</td>
+                                            <td>
+                                                Notice of Change of Address or Other Contact Information 
+                                            </td>
+                                            <td>Filed by Arutyun Harry Nalbandyan, Esq. (Attorney)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/29/2023</td>
+                                            <td>
+                                                Notice of Ruling 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/27/2023</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Motion to Compel Plaintiff Laura Elisa Rodriguez's...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/14/2023</td>
+                                            <td>
+                                                Opposition    
+Plaintiff Laura Rodriguez's Opposition to Defendant's Motiont o Compel Deposition of Plaintiff: request for Denial of Monetary sanctions against Plainitff and Plaintiff's Counsel                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">3/1/2023</td>
+                                            <td>
+                                                Motion to Compel    
+Plaintiff Laura Elisa Rodrigues Attendance at Her Deposition; Defendants Request for Monetary Sanctions in the Amount of 1125;                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/4/2022</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/3/2022</td>
+                                            <td>
+                                                Order    
+to continue trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/30/2022</td>
+                                            <td>
+                                                Stipulation and Order    
+and Good Cause to Continue Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/10/2022</td>
+                                            <td>
+                                                Notice    
+of Continuance of Trial                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/9/2022</td>
+                                            <td>
+                                                [Proposed Order] and Stipulation to Continue Trial, FSC (and Related Motion/Discovery Dates) Personal Injury Courts Only   (Central District) 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/24/2022</td>
+                                            <td>
+                                                Motion to Continue Trial Date 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/21/2022</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Ex Parte Application to Continue Trial)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/20/2022</td>
+                                            <td>
+                                                Ex Parte Application    
+to Continue Trial                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2021</td>
+                                            <td>
+                                                Notice of Posting of Jury Fees 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/7/2021</td>
+                                            <td>
+                                                Notice of Taking Motions Off-Calendar 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff's Motion to Compel Defendant Los Angeles County Metropolitan Authority's Responses to Plaintiff's Request for Production, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff's Motion to Compel Further Responses to Plaintiff's Special Interrogatories, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/30/2021</td>
+                                            <td>
+                                                Opposition    
+Opposition to Plaintiff's Motion to Deem Admitted Request for Admissions, Set One                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/13/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">8/6/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/23/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/21/2021</td>
+                                            <td>
+                                                Informal Discovery Conference 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/7/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">7/6/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Informal Discovery Conference (IDC))                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/21/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">6/14/2021</td>
+                                            <td>
+                                                Informal Discovery Conference Form for Personal Injury Courts 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO COMPEL DEFENDANT LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S FURTHER RESPONSES TO PLAINTIFF?S REQUEST FOR SPECIAL INTERROGATORIES, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Compel Further Discovery Responses 
+TO COMPEL DEFENDANTS LOS ANGELES COUNTY METROPOLITAN AUTHORITY?S RESPONSES TO PLAINTIFF?S REQUEST FOR PRODUCTION, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Motion to Deem RFA's Admitted 
+FOR ORDER DEEMING ADMITTED TRUTH OF FACTS AND GENUINENESS OF DOCUMENTS AS TO DEFENDANT RESPONSES TO PLAINTIFF?S REQUEST FOR ADMISSIONS, SET ONE;                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">4/29/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/24/2021</td>
+                                            <td>
+                                                Minute Order 
+ (Hearing on Plaintiff's Motion to Quash Defendant's Subpoenas ...)                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/17/2021</td>
+                                            <td>
+                                                Reply    
+Plaintiff Laura Rodriguez Reply To Defendants Opposition To Plaintiffs Motion To Quash Or Modify Defendants Subpoena For The Production Of Medical Records Served On Third Parties                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">2/5/2021</td>
+                                            <td>
+                                                Opposition    
+Defendant's Oposition to Plaintiffs' Motion to Quash Defendant's Subpoenas for Plaintiff's Medical, Billing, Radiological and Insurance Records                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/22/2021</td>
+                                            <td>
+                                                Motion to Quash 
+Defendant's Subpoenas to Providence Holy Cross Medical Center and Olive View UCLA Medical Center  for Plaintiffs' Medical, Billing, Radiological, and Insurance Records                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">1/22/2021</td>
+                                            <td>
+                                                Separate Statement 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/20/2020</td>
+                                            <td>
+                                                Answer 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">11/20/2020</td>
+                                            <td>
+                                                Demand for Jury Trial 
+                                            </td>
+                                            <td>Filed by Los Angeles County Metropolitan Transportation Authority, a public entity (Defendant)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/27/2020</td>
+                                            <td>
+                                                Proof of Personal Service 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/21/2020</td>
+                                            <td>
+                                                Summons 
+on Complaint                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/5/2020</td>
+                                            <td>
+                                                Certificate of Mailing for 
+[PI General Order]                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">10/5/2020</td>
+                                            <td>
+                                                PI General Order 
+                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Application And Order For Appointment of Guardian Ad Litem 
+for Laura E.                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Civil Case Cover Sheet 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Complaint 
+                                            </td>
+                                            <td>Filed by Laura Alcaraz (Plaintiff); Laura Elisa Rodriguez (Plaintiff)</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="KeyField">9/21/2020</td>
+                                            <td>
+                                                Notice of Case Assignment - Unlimited Civil Case 
+                                            </td>
+                                            <td>Filed by Clerk</td>
+                                        </tr>
+                    </tbody></table>
