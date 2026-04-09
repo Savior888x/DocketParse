@@ -1,0 +1,1217 @@
+
+										<!--Main section start-->
+
+										<div class="contentTitleWeb3">
+											Case Document Images
+										</div>
+
+										<div id="topMenuPubweb3">
+												<a href="/paos/v2web3/GuestInformation"><img src="/paos/v2web3/img/home-gold.png" title="Guest Account Information" /></a>
+												<a href="/paos/v2web3/Login?logout=y"><img src="/paos/v2web3/img/logout.png" title="Log Out" /></a>
+											<a href="https://www.lacourt.ca.gov/paos/v2web3/FAQ" onclick="return displayNewWindow(this);"><img src="/paos/v2web3/img/faq.png" alt="Frequently Asked Questions" title="Frequently Asked Questions" /></a>
+										</div>
+										<script>
+function submitFormCheck()
+{
+        var checkedBoxes = document.querySelectorAll('input[type=checkbox]:checked');
+        if(checkedBoxes.length == 0)
+        {
+            alert("Please select at least one document.");
+            return false;
+        }
+        else if(checkedBoxes.length > 10)
+        {
+            alert("Please select 10 documents or less. You currently have " + checkedBoxes.length + " documents selected.");
+            return false;
+        }
+    showWaitSpinner("waitSpinner");
+    document.forms["paosForm"].submit();
+}
+    function downtimeClose() {
+        alert("This application is about to be taken offline for maintenance. Payments have been disabled to prevent issues with retrieving items you have paid for.  Please try again after the maintenance period.");
+        return false;
+    }
+function pageSelectionInfo()
+{
+    alert("You can now customize which pages you wish to download.  You can choose individual pages, separated by commas or page ranges by using a dash.\r\n\r\n" + "For example: 1,4,8-10,13");
+    return false;
+}
+    function preview(docId, securityKey, caseTypeCode, source, caseNumber) {
+        return displayNewWindowByUrl("https://www.lacourt.ca.gov/paos/v2web3/DocumentImages/PreviewWait?id=" + docId + "&securityKey=" + securityKey + "&source=" + source + "&caseType=" + caseTypeCode + "&caseNumber=" + caseNumber);
+}
+</script>
+
+<div id="mainArea">
+        <p class="paragraph-padding" style="padding-top: 30px;">
+        <b>Case Number: </b> 20STCV36044 <br />
+        <b>Case Title: </b> LAURA ALCARAZ, ET AL. VS LOS ANGELES COUNTY METROPOLITAN TRANSPORTATION AUTHORITY, A PUBLIC ENTITY <br />
+        <b>Case Type: </b> Motor Vehicle - Personal Injury/Property Damage/Wrongful Death (General Jurisdiction)<br />
+        <b>Filing Date: </b> 9/21/2020<br />
+    </p>
+        <p class="paragraph-padding"><b>The following documents are available electronically.</b></p>
+        <p class="paragraph-padding">Click on the "Submit" button to continue.</p>
+        <p class="paragraph-padding"><input type="button" class="btn btn-danger btn-sm" value="New Search" onclick="location.href='https://www.lacourt.ca.gov/paos/v2web3/DocumentImages/SearchCaseNumber';" /></p>
+    <form method="post" name="paosForm" id="paosForm">
+                <table class="tblChart">
+                    <thead>
+                        <tr class="alt1">
+                            <th>Select</th>
+                            <th>Filed</th>
+                            <th>Document</th>
+                            <th>Pages Selected</th>
+                            <th>Total&nbsp;Pages</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc113012994" name="Doc113012994" aria-label="Select Box for 113012994" />
+                                </td>
+                                <td>12/2/2025</td>
+                                <td>Motion to Vacate Dismissal</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages113012994" name="pages113012994" value="1-6" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('113012994', 'Pfo7iYcnDrKQPzxvg7MjEITtfM4qhkcF', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+6                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc104782686" name="Doc104782686" aria-label="Select Box for 104782686" />
+                                </td>
+                                <td>12/3/2024</td>
+                                <td>Request for Dismissal</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages104782686" name="pages104782686" value="1-2" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('104782686', 't5Ml6hbDX2dEPvKYgx23pVFYXwTUrnxD', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+2                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc102685173" name="Doc102685173" aria-label="Select Box for 102685173" />
+                                </td>
+                                <td>8/28/2024</td>
+                                <td>Minute Order (Order to Show Cause Re: Dismissal (Settlement))</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages102685173" name="pages102685173" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('102685173', 'J7oKNoe1VF0X4bDJL3nqYj2Rwl5QIQnj', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc101361646" name="Doc101361646" aria-label="Select Box for 101361646" />
+                                </td>
+                                <td>6/25/2024</td>
+                                <td>Minute Order (Order to Show Cause Re: Dismissal (Settlement))</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages101361646" name="pages101361646" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('101361646', 'cSh6sL7cs8XjuQuzGrbNc2yAFBnMynal', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100432147" name="Doc100432147" aria-label="Select Box for 100432147" />
+                                </td>
+                                <td>5/9/2024</td>
+                                <td>Minute Order (Court Order re: Notice of Settlement of Entire Case)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100432147" name="pages100432147" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100432147', 'kPzSwdE5hZqade1JYsDU0SnCDz2HowZU', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100432150" name="Doc100432150" aria-label="Select Box for 100432150" />
+                                </td>
+                                <td>5/9/2024</td>
+                                <td>Certificate of Mailing for(Court Order re: Notice of Settlement of Entire Case) of 05/09/2024</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100432150" name="pages100432150" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100432150', 'c1kKOOXgihkDXRLpbYmZ5HznMTy7HJk', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100422705" name="Doc100422705" aria-label="Select Box for 100422705" />
+                                </td>
+                                <td>5/9/2024</td>
+                                <td>Notice of Settlement of Entire Case</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100422705" name="pages100422705" value="1-4" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100422705', 'mH8NG6d6I6ydjxN9fjK7skbPfuIlMz', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+4                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100061364" name="Doc100061364" aria-label="Select Box for 100061364" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061364" name="pages100061364" value="1-2" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061364', 'aVXlrKAgDQmw74fW3Djhm8z1kFEyX6S', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+2                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100061269" name="Doc100061269" aria-label="Select Box for 100061269" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Declaration in Support of Attorney&#x27;s Motion to Be Relieved as Counsel-Civil</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061269" name="pages100061269" value="1-2" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061269', 'yaTlXvDvT2d76oVlbABH65tzbS8zla', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+2                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100061267" name="Doc100061267" aria-label="Select Box for 100061267" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Motion to Be Relieved as Counsel</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061267" name="pages100061267" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061267', 'hY76qVdkkHjgKriBkjZMHyJBkjttpaL', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100061363" name="Doc100061363" aria-label="Select Box for 100061363" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Motion to Be Relieved as Counsel</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061363" name="pages100061363" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061363', 'IM6F587jaWhlFFQB5KBtyk8hkugav8', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100061270" name="Doc100061270" aria-label="Select Box for 100061270" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Proof of Service (not Summons and Complaint)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061270" name="pages100061270" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061270', 'RryGWZsCNLgfuxP1DnjY9pRRywRUWlg', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100061271" name="Doc100061271" aria-label="Select Box for 100061271" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Proof of Service (not Summons and Complaint)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061271" name="pages100061271" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061271', 'ROLVAO8dd1IwoyqN5xQLGfSZvUHWYN', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100061366" name="Doc100061366" aria-label="Select Box for 100061366" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Proof of Service (not Summons and Complaint)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061366" name="pages100061366" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061366', '1fvtQjfltnyLdHnDgtBRq4teLXbUUYia', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100061367" name="Doc100061367" aria-label="Select Box for 100061367" />
+                                </td>
+                                <td>4/22/2024</td>
+                                <td>Proof of Service (not Summons and Complaint)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100061367" name="pages100061367" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100061367', 'saJmxpCWZKP6SJBSw3XbK59L0Hlntgl', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100019151" name="Doc100019151" aria-label="Select Box for 100019151" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. ONE: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT TESTIMONY OF PLAINTIFFS&#x27; EXPERT WITNESSES TO THOSE OPINIONS AND CONCLUSIONS TESTIFIED TO AT THEIR DEPOSITIONS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100019151" name="pages100019151" value="1-8" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100019151', 'CbdcD7GgrNcwDPUcr0MEIC7AydfG8YwQ', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+8                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100019568" name="Doc100019568" aria-label="Select Box for 100019568" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. TWO: DEFENDANT&#x27;S MOTION IN LIMINE TO EXCLUDE ANY EVIDENCE OR WITNESSES PLAINTIFFS FAILED TO IDENTIFY DURING DISCOVERY; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100019568" name="pages100019568" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100019568', 'VaNHe09I5Tzww9K9AjvVkHmTjsCQ92b', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100019962" name="Doc100019962" aria-label="Select Box for 100019962" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. THREE: DEFENDANT&#x27;S  THAT NO ACTUAL OR POTENTIAL DOLLAR AMOUNT OF DAMAGES IN THIS OR ANY OTHER HYPOTHETICAL CASE BE MENTIONED DURING VOIR DIRE EXAMINATION; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100019962" name="pages100019962" value="1-8" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100019962', 'r2MnXEjgN4QJmR6dfxYFiLAsAxRStnk', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+8                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100020603" name="Doc100020603" aria-label="Select Box for 100020603" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. FOUR: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT EVIDENCE OF PLAINTIFFS&#x27; MEDICAL CHARGES; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. WAINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100020603" name="pages100020603" value="1-10" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100020603', 'g3jwJx1KqiT1jE9c1YQi0yVRNHTFBB', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+10                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100021883" name="Doc100021883" aria-label="Select Box for 100021883" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. FIVE: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE &#x27;GOLDEN RULE&#x27; OR &#x27;REPTILE THEORY&#x27; ARGUMENTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100021883" name="pages100021883" value="1-12" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100021883', 'TYJSnOIb8GGC9rYwbjtUgsNTfPjoWUcr', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+12                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc100022353" name="Doc100022353" aria-label="Select Box for 100022353" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. SIX: DEFENDANT&#x27;S MOTION IN LIMINE TO PRECLUDE ANY STATEMENT, ARGUMENT, OR SUGGESTION THAT DEFENDANT&#x27;S EXPERTS IMPROPERLY REACHED THEIR OPINIONS BY FAILING TO PHYSICALLY EXAMINE PLAINTIFF; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARAITION OF GABRIEL H</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100022353" name="pages100022353" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100022353', 'vX8fIQsxH1xR1ZRtwT3xGw6eCEV07o', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc100022837" name="Doc100022837" aria-label="Select Box for 100022837" />
+                                </td>
+                                <td>4/19/2024</td>
+                                <td>Motion in Limine NO. SEVEN: DEFENDANT&#x27;S MOTION IN LIMINE TO LIMIT THE SCOPE OF TESTIMONY OF PLAINTIFF&#x27;S NON-RETAINED EXPERTS; MEMORANDUM OF POINTS AND AUTHORITIES; DECLARATION OF GABRIEL H. W AINFELD</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages100022837" name="pages100022837" value="1-8" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('100022837', 'yV10QKmwiyvnvfIbe3Ai4qW6LA3lRLhV', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+8                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc99103314" name="Doc99103314" aria-label="Select Box for 99103314" />
+                                </td>
+                                <td>3/7/2024</td>
+                                <td>Notice of Ruling</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages99103314" name="pages99103314" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('99103314', 'v3hqP5hwCQZUfxwSocdOPwuuUk7lhgS', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc99071293" name="Doc99071293" aria-label="Select Box for 99071293" />
+                                </td>
+                                <td>3/6/2024</td>
+                                <td>Minute Order (Hearing on Motion to Bifurcate of Issues at Trial)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages99071293" name="pages99071293" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('99071293', 'emQGmIjxzEgH1k2A3R655SIiJ7G7gPat', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc98872690" name="Doc98872690" aria-label="Select Box for 98872690" />
+                                </td>
+                                <td>2/26/2024</td>
+                                <td>Reply to Plaintiff&#x27;s  Opposition to Motion for Bifurcation of Issues at Trial; Memorandum of Points and Authorities; Declaration of Joshua B. Adelpour</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98872690" name="pages98872690" value="1-5" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98872690', 'l7VgcEC1GyOTaxKUwnyEyg63frcQTN', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+5                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc98832472" name="Doc98832472" aria-label="Select Box for 98832472" />
+                                </td>
+                                <td>2/23/2024</td>
+                                <td>Minute Order ((1) Hearing on Motion to Compel Further Discovery Responses; ...)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98832472" name="pages98832472" value="1-19" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98832472', 'yWXirfYFBUVnj3zx4b6Xu8pExi2a0', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+19                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc98832473" name="Doc98832473" aria-label="Select Box for 98832473" />
+                                </td>
+                                <td>2/23/2024</td>
+                                <td>Certificate of Mailing for((1) Hearing on Motion to Compel Further Discovery Responses; ...) of 02/23/2024</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98832473" name="pages98832473" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98832473', '8x8zwMjGU51unB5yis8oc3gnTTO0BTM', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc98803383" name="Doc98803383" aria-label="Select Box for 98803383" />
+                                </td>
+                                <td>2/22/2024</td>
+                                <td>Opposition Plaintiff&#x27;s Opposition to Defendant&#x27;s Motion to Bifurcate the Issues of Liability and Damages at Trial</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98803383" name="pages98803383" value="1-10" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98803383', 'ZmxUvhCKaorxbNXNH1VUwPOgOoMB8c', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+10                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc98617282" name="Doc98617282" aria-label="Select Box for 98617282" />
+                                </td>
+                                <td>2/13/2024</td>
+                                <td>Reply TO PLAINTIFFS OPPOSITION TOMOTION TO COMPEL PLAINTIFF TO FURTHER ANSWER FORM INTERROGATORIES, SET TWO; DECLARATION OF JOSHUA B. ADELPOUR</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98617282" name="pages98617282" value="1-10" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98617282', 'pQ4ZT7ewv391hCdSpWUvho3AFIELtdB', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+10                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc98617283" name="Doc98617283" aria-label="Select Box for 98617283" />
+                                </td>
+                                <td>2/13/2024</td>
+                                <td>Reply TO PLAINTIFFS OPPOSITION TO MOTION TO DEEM FURTHER RESPONSES TO REQUEST FOR ADMISSIONS ADMITTED AGAINST PLAINTIFF LAURA ELISA RODRIGUEZ; DECLARATION OF JOSHUA B. ADELPOUR</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98617283" name="pages98617283" value="1-10" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98617283', 'qDMcp6l2q97MiWihlPDhLNjrjxb9ai5l', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+10                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc98575226" name="Doc98575226" aria-label="Select Box for 98575226" />
+                                </td>
+                                <td>2/9/2024</td>
+                                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO COMPEL FURTHER RESPONSES TO  FORM INTERROGATORIES SET TWO;  MEMORANDUM OF POINTS AND  AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98575226" name="pages98575226" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98575226', 'JCpvdf4zdVgpS9rvGEQVI4VyrjPueY5n', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc98575255" name="Doc98575255" aria-label="Select Box for 98575255" />
+                                </td>
+                                <td>2/9/2024</td>
+                                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO DEEM FURTHER RESPONSES TO  REQUEST FOR ADMISSION ADMITTED  AGAINST PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98575255" name="pages98575255" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98575255', 'RYZE4VrJir2l2ATpLwFFM4uMRAIMU', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc98499569" name="Doc98499569" aria-label="Select Box for 98499569" />
+                                </td>
+                                <td>2/7/2024</td>
+                                <td>Motion to Bifurcateof Issues at Trial</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages98499569" name="pages98499569" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('98499569', 'Alw3G4MMGimcsmRay6OoAVqwavp3twEp', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc97574263" name="Doc97574263" aria-label="Select Box for 97574263" />
+                                </td>
+                                <td>12/20/2023</td>
+                                <td>Motion to Compel Further Discovery ResponsesTO DEEM FURTHER&#xD;&#xA;RESPONSES TO REQUEST FOR&#xD;&#xA;ADMISSIONS ADMITTED AGAINST&#xD;&#xA;PLAINTIFF LAURA ELISA RODRIGUEZ;&#xD;&#xA;REQUEST FOR MONETARY SANCTIONS;</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97574263" name="pages97574263" value="1-30" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97574263', 'HxkTyyMzHFRkD2V0ZoyuCBPs2hSeXk', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+30                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc97574172" name="Doc97574172" aria-label="Select Box for 97574172" />
+                                </td>
+                                <td>12/20/2023</td>
+                                <td>Motion to Compel Further Discovery ResponsesDEFENDANT MOTION TO COMPEL PLAINTIFF TO&#xD;&#xA;FURTHER ANSWER FORM&#xD;&#xA;INTERROGATORIES, SET TWO; DEMAND&#xD;&#xA;FOR MONETARY SANCTIONS AGAINST&#xD;&#xA;PLAINTIFF, LAURA ELISA RODRIGUEZ,&#xD;&#xA;AND HER ATTORNEY OF RECORD,</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97574172" name="pages97574172" value="1-36" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97574172', 'XVljr3c1hoQg60WwZwBEK2yARrQFkuL', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+36                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc97574264" name="Doc97574264" aria-label="Select Box for 97574264" />
+                                </td>
+                                <td>12/20/2023</td>
+                                <td>Separate Statement</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97574264" name="pages97574264" value="1-9" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97574264', 'ofByQzOB25WLiQYitXyuGQcg3Le5bHb2', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+9                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc97574173" name="Doc97574173" aria-label="Select Box for 97574173" />
+                                </td>
+                                <td>12/20/2023</td>
+                                <td>Separate Statement</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97574173" name="pages97574173" value="1-6" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97574173', 'wNkc8J3G3B6XSZ7hdVY62kEyLPNaSPS', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+6                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc97430035" name="Doc97430035" aria-label="Select Box for 97430035" />
+                                </td>
+                                <td>12/12/2023</td>
+                                <td>Notice of Continuance of Trial</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97430035" name="pages97430035" value="1-4" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97430035', 'jrY3OT7Q7atx1TPzdcCSTD11AOMLsF', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+4                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc97300519" name="Doc97300519" aria-label="Select Box for 97300519" />
+                                </td>
+                                <td>12/8/2023</td>
+                                <td>Order [Proposed] Order</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97300519" name="pages97300519" value="1-2" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97300519', 'yJDSmTmsVBMDHXj9i8SBoUvYMdx59Zc', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+2                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc97300518" name="Doc97300518" aria-label="Select Box for 97300518" />
+                                </td>
+                                <td>12/6/2023</td>
+                                <td>Stipulation and Order and Good Cause to Continue Trial</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97300518" name="pages97300518" value="1-5" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97300518', 'm0SgTigVBpX7yWsWlBINyZGSOWaqm', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+5                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc97164368" name="Doc97164368" aria-label="Select Box for 97164368" />
+                                </td>
+                                <td>11/30/2023</td>
+                                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97164368" name="pages97164368" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97164368', 'OnqcPldaMLi8da5X7NhkhQWHdqZyP7t', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc97194331" name="Doc97194331" aria-label="Select Box for 97194331" />
+                                </td>
+                                <td>11/30/2023</td>
+                                <td>Notice Results of Informal Discovery Conference</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97194331" name="pages97194331" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97194331', 'y8iv5GmpyVTcQ5KVJAaxtGqnDEu1oY1', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc97116858" name="Doc97116858" aria-label="Select Box for 97116858" />
+                                </td>
+                                <td>11/28/2023</td>
+                                <td>Opposition PLAINTIFF LAURA RODRIGUEZ&#x27;S  OPPOSITION TO DEFENDANT&#x27;S MOTION  TO COMPEL THE DEFENSE MEDICAL  EXAMINATION OF PLAINTIFF LAURA  RODRIGUEZ; MEMORANDUM OF POINTS  AND AUTHORITIES; DECLARATION OF  GERARDO MORENO, JR.</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages97116858" name="pages97116858" value="1-42" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('97116858', 'HeHNY0oGuZqefzaXnVHriZChaBkdUg', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+42                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc96885500" name="Doc96885500" aria-label="Select Box for 96885500" />
+                                </td>
+                                <td>11/15/2023</td>
+                                <td>Minute Order (Informal Discovery Conference (IDC))</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages96885500" name="pages96885500" value="1-1" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('96885500', '4ieqd6rd3NcsJuWeVLLZxi1cggFkh7Q', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+1                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc96867925" name="Doc96867925" aria-label="Select Box for 96867925" />
+                                </td>
+                                <td>11/13/2023</td>
+                                <td>Informal Discovery Conference Form For Personal Injury Courts</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages96867925" name="pages96867925" value="1-4" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('96867925', 'w4OQIiNjs3sEGEbgCZNhROY7Q5fTlpB', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+4                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc96791765" name="Doc96791765" aria-label="Select Box for 96791765" />
+                                </td>
+                                <td>11/9/2023</td>
+                                <td>Motion to Compel the Defense Medical Examination of Plaintiff Laura Elisa Rodriguez&#x27;; Defendant&#x27;s Request for Monetary Sanctions in The Amount of 1125;</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages96791765" name="pages96791765" value="1-25" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('96791765', '3pUMYOhC6rTwujdqhOVDavgbPdgSHa4', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+25                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc96374152" name="Doc96374152" aria-label="Select Box for 96374152" />
+                                </td>
+                                <td>10/20/2023</td>
+                                <td>Informal Discovery Conference Form for Personal Injury Courts</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages96374152" name="pages96374152" value="1-5" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('96374152', 'EUkfy80KAdrVV6erL3rRmoLan0yP4KK3', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+5                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc95227583" name="Doc95227583" aria-label="Select Box for 95227583" />
+                                </td>
+                                <td>8/24/2023</td>
+                                <td>Minute Order (Hearing on Motion to Continue Trial)</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages95227583" name="pages95227583" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('95227583', 'xrS022kvFJAmuat4jBaFbqQC0piWLI', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt1 table-1">
+                                <td>
+                                        <input type="checkbox" id="Doc95233235" name="Doc95233235" aria-label="Select Box for 95233235" />
+                                </td>
+                                <td>8/24/2023</td>
+                                <td>Notice of Ruling</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages95233235" name="pages95233235" value="1-3" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('95233235', 'n1GWuBUmlEMvxE3wjIyLURQlaqVnGvrS', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+3                                </td>
+                            </tr>
+                            <tr class="alt2 table-2">
+                                <td>
+                                        <input type="checkbox" id="Doc94718267" name="Doc94718267" aria-label="Select Box for 94718267" />
+                                </td>
+                                <td>7/31/2023</td>
+                                <td>Motion to Continue Trial DateBy Defendants</td>
+                                <td>
+                                    <table class="emptyTable">
+                                        <tr>
+                                            <td>
+                                                    <input type="text" id="pages94718267" name="pages94718267" value="1-17" aria-label="Selected Pages Input Field"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" onclick="return pageSelectionInfo();" value="?" class="btn btn-info btn-sm" style="color: white;" aria-label="Button for Information about Selecting Pages" />
+                                            </td>
+                                            <td>
+<input type="button" class="btn btn-primary btn-sm" onclick="preview('94718267', '8WUjhbXGQxARmpEVTIVN35kXIZt7Wkw', 'CV', 'DMS-6', '20STCV36044');" value="Preview" />                                            </td>
+                                        </tr>
+                                    </table>
+
+                                <td>
+17                                </td>
+                            </tr>
+                    </tbody>
+                </table>
